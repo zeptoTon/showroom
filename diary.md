@@ -1,6 +1,29 @@
 #Showroom Diary
 
-#2017-04-28
+##2017-05-03
+__v in Mongo Document ?
+
+
+##2017-04-29
+Create DB schemas in ES6 style for mongoose
+ - characters model
+import data from json function
+Express Route
+ - '/' index.html
+ - '/characters' GET PUT PATCH(batch) DELETE(all)
+ - '/characters/:id' GET PATCH DELETE
+Folder Structure
+/client-src
+ - tsx
+/server-src
+ - tsx
+/client-build
+ - bundle.js
+/server-build
+index.html
+
+
+##2017-04-28
 What dev stack should I use?
 what I learn from masterchef(webpack + babel + react), we could use typescript + react this time.
 Nodejs + Express + Jest test runner + Sinon

@@ -1,0 +1,15 @@
+{
+    "apps": [{
+        "name": "express-server",
+        "script": "./build/server/server.js",
+        "watch": "./build/server/",
+        "env": {
+            "NODE_ENV": "development"
+        },
+        "env_production": {
+            "NODE_ENV": "production"
+        },
+        "source_map_support": true,
+        "node_args": ["--debug=7000"]
+    }]
+}
