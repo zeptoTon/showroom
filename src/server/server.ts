@@ -1,6 +1,7 @@
 import * as bluebird from "bluebird";
 import * as bodyParser from "body-parser";
 import * as express from "express";
+import * as path from "path";
 import CharacterService from "./services/CharacterService";
 import mongoose = require("mongoose");
 mongoose.Promise = bluebird;
@@ -12,10 +13,18 @@ const characterService = new CharacterService(connection);
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+app.use("/js", express.static(path.join(__dirname, "../..", "dist", "js")));
+
 
 app.get("/", (req, res) => {
-    res.send("Hello World!");
+    res.sendFile(path.join(__dirname, "../..", "dist", "index.html"));
 });
+/**
+ * Serve Static
+ */
+
+
+
 
 app.get("/characters", characterService.getAllHandler);
 app.post("/characters", characterService.createCharacterHandler);
