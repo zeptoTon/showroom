@@ -5,7 +5,9 @@ import * as path from "path";
 import CharacterService from "./services/CharacterService";
 import mongoose = require("mongoose");
 mongoose.Promise = bluebird;
-const MONGODB_CONNECTION: string = "mongodb://localhost:27017/showroom";
+const MONGODB_CONNECTION: string = process.env.MONGODB ||
+    "mongodb://localhost:27017/showroom";
+
 const connection = mongoose.createConnection(MONGODB_CONNECTION);
 const app = express();
 

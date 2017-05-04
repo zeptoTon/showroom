@@ -6,7 +6,8 @@ import { ICharacter, ICharacterModel } from "../interfaces/CharacterInterface";
 
 import * as bluebird from "bluebird";
 
-const MONGODB_CONNECTION: string = "mongodb://localhost:27017/showroom-test";
+const MONGODB_CONNECTION: string = MONGODB ||
+    "mongodb://localhost:27017/showroom-test";
 
 describe("Character Model test suite", () => {
 

@@ -47,6 +47,9 @@
         "react-dom": "^15.5.4"
     },
     "jest": {
+        "globals": {
+            "MONGODB": "mongodb://localhost:27017/showroom-test"
+        },
         "moduleFileExtensions": [
             "js",
             "jsx",

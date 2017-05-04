@@ -4,7 +4,8 @@
         "script": "./build/server/server.js",
         "watch": "./build/server/",
         "env": {
-            "NODE_ENV": "development"
+            "NODE_ENV": "development",
+            "MONGODB": "mongodb://localhost:27017/showroom"
         },
         "env_production": {
             "NODE_ENV": "production"
