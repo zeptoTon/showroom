@@ -10,6 +10,20 @@ export class CharacterRoom extends React.Component<ICharacterRoomProps, any> {
         super(props);
     }
 
+    public deleteCharacterHandler = (event) => {
+        const { selectedCharacter } = this.props.store;
+        if (selectedCharacter._id !== null) {
+            fetch(`/characters/${selectedCharacter._id}`, {
+                method: "DELETE",
+            }).then((response) => response.json())
+                .then(({ isRemoved }) => {
+                    if (isRemoved) {
+                        this.props.store.characters.remove(selectedCharacter);
+                    }
+                });
+        }
+    }
+
     public render() {
         const { selectedCharacter } = this.props.store;
         if (selectedCharacter === null) {
@@ -18,6 +32,7 @@ export class CharacterRoom extends React.Component<ICharacterRoomProps, any> {
         return (
             <div>
                 <CharacterForm character={selectedCharacter} />
+                <input type="button" value="Delete" onClick={this.deleteCharacterHandler} />
             </div>
 
         );

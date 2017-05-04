@@ -1,11 +1,14 @@
 #Showroom Diary
 
+
+
 ##2017-05-03
-frontend source map issue. it cannot map tsx!
+frontend source map issue. it cannot map tsx
+ - fixed using vsc debugger.
 
 dev => config webpack to let index.html serve..
  - do I need webpacke-dev-server for live reload or HMR?
- - I need a html loader in webpack and output to dist
+ - I need a html loader in webpack and output to dist, DONE
 production => config node serve under /dist/index.html
 
 __v in Mongo Document ?

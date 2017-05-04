@@ -35,11 +35,11 @@ export class App extends React.Component<any, any> {
         const { isCreate } = this.store;
         return (
             <div>
+                <button onClick={this.createCharacter}>Create</button>
+                {isCreate && <CharacterForm character={this.store.newCharacter} store={this.store} />
+                }
                 <CharacterList store={this.store} />
                 <CharacterRoom store={this.store} />
-                <button onClick={this.createCharacter}>Create</button>
-                {isCreate && <CharacterForm character={this.store.newCharacter} />
-                }
             </div>
         );
     }

@@ -18,8 +18,14 @@ export class CharacterForm extends React.Component<ICharacterFormProps, any> {
                 method: "POST",
             })
                 .then((response) => response.json())
-                .then((result) => {
-                    console.log(result);
+                .then(({ id }) => {
+                    if (id !== undefined) {
+                        this.props.character._id = id;
+                        this.props.store.characters.push(this.props.character);
+                        this.props.store.isCreate = false;
+                        this.props.store.newCharacter = null;
+
+                    }
                 });
         } else {
             fetch(`/characters/${_id}`, {
@@ -34,6 +40,9 @@ export class CharacterForm extends React.Component<ICharacterFormProps, any> {
                 });
         }
     }
+
+
+
     public handleInputChange = (event) => {
         const target = event.target;
         const value = target.type === "checkbox" ? target.checked : target.value;
@@ -69,6 +78,7 @@ export class CharacterForm extends React.Component<ICharacterFormProps, any> {
                     type="text" value={skin_color} onChange={this.handleInputChange} />
                 <input type="submit" value="Save" />
             </form>
+
         );
     }
 }

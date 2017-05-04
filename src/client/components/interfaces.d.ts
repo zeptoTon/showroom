@@ -8,6 +8,7 @@ export interface ICharacterRoomProps {
 }
 
 export interface ICharacterFormProps {
+    store: CharacterStore;
     character: ICharacter;
 }
 
