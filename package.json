@@ -7,7 +7,7 @@
         "test": "jest --watch",
         "webpack": "webpack --progress --watch",
         "tsc": "tsc --watch",
-        "mongod": "mongod --dbpath ./data/db",
+        "mongod": "mkdir -p ./data/db && mongod --dbpath ./data/db",
         "start": "concurrently \"npm run webpack\" \"npm run tsc\" \"npm run mongod\" "
     },
     "author": "Tony Li",

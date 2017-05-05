@@ -38,7 +38,8 @@ app.delete("/characters/:id", characterService.removeSingleHandler);
  * TODO:
  * batch remove, batch update(for fav in future)
  */
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
 
-app.listen(3000, () => {
-    console.log("Example app listening on port 3000!");
+    console.log(`Example app listening on port ${PORT}!`);
 });

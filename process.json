@@ -1,11 +1,12 @@
 {
     "apps": [{
-        "name": "express-server",
+        "name": "express-server2",
         "script": "./build/server/server.js",
         "watch": "./build/server/",
         "env": {
             "NODE_ENV": "development",
-            "MONGODB": "mongodb://localhost:27017/showroom"
+            "MONGODB": "mongodb://localhost:27017/showroom",
+            "PORT": "3000"
         },
         "env_production": {
             "NODE_ENV": "production"

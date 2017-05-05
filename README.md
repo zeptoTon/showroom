@@ -27,11 +27,15 @@ This project is demonstrating full stack technology by using a showroom
 `npm install -g pm2`
 
 ## Start Dev
+Note: If mongod already start, it will show error as it is trying to start mongod as well, however it can be ignore.
+
 `yarn start`
 
 `pm2 start process.json`
 
 ## Test
+You can only run testing while `yarn start` is listening changes in behind.
+
 `yarn test`
 
 ## Config
@@ -40,4 +44,6 @@ package.json
 
 process.json
 - MONGODB, connection string for dev env.
+- PORT, port number for dev server. default 3000
+
 
