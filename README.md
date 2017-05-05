@@ -46,4 +46,6 @@ process.json
 - MONGODB, connection string for dev env.
 - PORT, port number for dev server. default 3000
 
+## Debug
+Provided vscode launch.json to allow debugging breakpoint on tsx and ts files inside vscode.
 
