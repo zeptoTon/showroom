@@ -15,6 +15,7 @@ This project is demonstrating full stack technology by using a showroom
 - pm2
 
 ## TODO:
+- Fix error from tslint (currenlty there are 5 errors)
 - SASS
 - enzyme, sinon in Frontend Testing
 - CSS Presentation on DOM (at the moment is nothing!)
