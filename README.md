@@ -19,6 +19,7 @@ This project is demonstrating full stack technology by using a showroom
 - enzyme, sinon in Frontend Testing
 - CSS Presentation on DOM (at the moment is nothing!)
 - HMR with webpack-dev-server in developement
+- HTML5 history API / React Router
 
 ## Setup
 `yarn install`
