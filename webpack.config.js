@@ -34,6 +34,20 @@ const config = {
                     },
                 ],
             },
+            {
+                test: /\.scss$/,
+                use: [{
+                    loader: "style-loader"
+                }, {
+                    loader: "css-loader", options: {
+                        sourceMap: true
+                    }
+                }, {
+                    loader: "sass-loader", options: {
+                        sourceMap: true
+                    }
+                }]
+            },
             // All output '.js' files will have any sourcemaps re-processed by 'source-map-loader'.
             { enforce: "pre", test: /\.js$/, loader: "source-map-loader" }
         ]

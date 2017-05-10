@@ -1,6 +1,13 @@
 #Showroom Diary
 
+##2017-05-10
+got into this !
+https://github.com/sass/node-sass/issues/1579
 
+try to integrate SASS with webpack/npm ?
+it could be a good idea to use loader therefore we could skip build folder
+sass-loader => src -> dist
+node-sass + css-loader => src -> build -> dist
 
 ##2017-05-03
 frontend source map issue. it cannot map tsx

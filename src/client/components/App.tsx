@@ -5,7 +5,6 @@ import { CharacterForm } from "./CharacterForm";
 import { CharacterList } from "./CharacterList";
 import { CharacterRoom } from "./CharacterRoom";
 
-
 @observer
 export class App extends React.Component<any, any> {
     public store: CharacterStore;

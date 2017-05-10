@@ -20,6 +20,7 @@
         "@types/mongoose": "^4.7.11",
         "awesome-typescript-loader": "^3.1.2",
         "concurrently": "^3.4.0",
+        "css-loader": "^0.28.1",
         "enzyme": "^2.8.2",
         "extract-loader": "^0.1.0",
         "file-loader": "^0.11.1",
@@ -28,8 +29,10 @@
         "jest": "^19.0.2",
         "node-sass": "^4.5.2",
         "react-addons-test-utils": "^15.5.1",
+        "sass-loader": "^6.0.5",
         "sinon": "^2.1.0",
         "source-map-loader": "^0.2.1",
+        "style-loader": "^0.17.0",
         "tslint": "^5.1.0",
         "typescript": "^2.3.2",
         "webpack": "^2.4.1"

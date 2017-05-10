@@ -16,7 +16,7 @@ This project is demonstrating full stack technology by using a showroom
 
 ## TODO:
 - Fix error from tslint (currenlty there are 5 errors)
-- SASS
+=> - SASS
 - Integration testing of RESTFUL API
 - enzyme, sinon in Frontend Testing
 - CSS Presentation on DOM (at the moment is nothing!)
